@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7020986744320045311}
   - component: {fileID: 7020986744321098349}
   - component: {fileID: 5309872314239898887}
-  - component: {fileID: 2478501001570551631}
+  - component: {fileID: 7462679072200315224}
   m_Layer: 0
   m_Name: Meat
   m_TagString: Meat
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.46739918, y: 0.08559368, z: 0.6615112}
   m_Center: {x: 0, y: 0.04279684, z: 0}
---- !u!114 &2478501001570551631
+--- !u!114 &7462679072200315224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,6 +107,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7020986744319141921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e19134f29b348ddae901e3c48c380b, type: 3}
+  m_Script: {fileID: 11500000, guid: 92a4cc02f6b9445839c1abd31e23018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
