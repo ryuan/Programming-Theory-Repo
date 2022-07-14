@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
         }
         else if (isGameOver)
         {
-            LoseGame();
+            StartCoroutine(LoseGame());
         }
     }
 
@@ -89,5 +90,10 @@ public class GameManager : MonoBehaviour
         backgroundUI.SetActive(true);
         loseText.gameObject.SetActive(true);
         returnButton.gameObject.SetActive(true);
+    }
+
+    public void ReturnToTitle()
+    {
+        SceneManager.LoadScene(0);
     }
 }
