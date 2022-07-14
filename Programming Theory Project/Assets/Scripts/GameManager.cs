@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator WinGame()
     {
+        playerAnimator.SetFloat("Speed_f", 0);
         playerAnimator.SetInteger("Animation_int", 4);
 
         yield return new WaitForSeconds(2.5f);
@@ -83,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LoseGame()
     {
-        playerAnimator.SetInteger("Animation_int", 9);
+        playerAnimator.SetBool("Death_b", true);
 
         yield return new WaitForSeconds(2.5f);
 
