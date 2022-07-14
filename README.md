@@ -2,6 +2,8 @@
 
 https://user-images.githubusercontent.com/950298/178923371-77bbb227-7491-4b11-ab7c-d26634da80bc.mp4
 
+## https://play.unity.com/mg/other/webgl-builds-221451
+
 ### final project submission for Unity programming course
 
 My simple project, called Survive the Night, features our Cowboy hero stuck in a floating desert landscape. The sun is about to set, he is starving, and must stock up on food before he runs out of energy for the night. Find your way across the desert in this mini exploration game!
