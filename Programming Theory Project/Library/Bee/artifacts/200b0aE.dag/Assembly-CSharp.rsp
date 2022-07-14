@@ -354,6 +354,7 @@
 "Assets/Scripts/Meat.cs"
 "Assets/Scripts/Pickups.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/TitleController.cs"
 -langversion:9.0
 
 /deterministic
