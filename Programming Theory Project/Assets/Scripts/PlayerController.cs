@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isThrowing)
+        if (!isThrowing && !gameManager.isGameOver)
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -57,6 +57,11 @@ public class PlayerController : MonoBehaviour
             {
                 Throw();
             }
+        }
+
+        if (transform.position.y < -20)
+        {
+            gameManager.isGameOver = true;
         }
     }
 

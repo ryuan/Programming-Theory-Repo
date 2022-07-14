@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private GameObject meatPrefab;
 
+    private GameManager gameManager;
     private int dirMult;
     private Vector3 rotationAxis;
 
@@ -33,6 +34,8 @@ public class Enemy : MonoBehaviour
         }
 
         rotationAxis = transform.position + Vector3.right * dirMult * turnRadius;
+
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -54,6 +57,10 @@ public class Enemy : MonoBehaviour
 
             Destroy(collision.gameObject);
             Destroy(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            gameManager.isGameOver = true;
         }
     }
 }
